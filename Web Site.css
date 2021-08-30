@@ -1,0 +1,203 @@
+body{
+	margin: none;
+	background-color: #000000e6;
+}
+
+
+/* Horizontal Lists */
+
+nav{
+	background-color: black;
+	padding: 5px 10px;
+}
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 25px 8px 15px;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*Cube*/
+
+@keyframes rotate-cube{
+
+	0%{
+       transform: rotateX(0deg) rotateY(0deg) translate(0px);
+	}
+    
+    25%{
+		transform: rotateX(90deg) rotateY(90deg) translate(-400px);
+	}
+
+	50%{
+		transform: rotateX(200deg) rotateY(200deg) translate(-400px);
+	}
+
+	75%{
+		transform: rotateX(270deg) rotateY(270deg) translate(-200px);
+	}
+
+	100%{
+		transform: rotate(360deg) rotate(360deg) translate(-0px);
+	}
+}
+
+.cube{
+	height: 100px;
+	width: 100px;	
+	position: relative;
+	margin: 30% 100px 2% 400px;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+	animation: rotate-cube 5s ease-in-out infinite alternate;
+}
+
+.face{
+	height: 100%;
+	width: 100%;
+	border: 1px solid black;
+	position: absolute;
+	top: 10%;
+	left: 80%;
+	transition: all 1s;
+}
+
+.one{
+	background-color: #fffffff0;
+	box-shadow: 0px 0px 2px 5px white;
+}
+
+.two{
+	background-color: #fffffff0;
+	transform: rotateX(90deg) translateZ(50px) translateY(50px);
+	box-shadow: 0px 0px 2px 5px white;
+}
+
+.three{
+	background-color: #26262682;
+	transform: rotateX(90deg) translateY(50px) translateZ(-50px);
+	box-shadow: 0px 0px 2px 5px white;
+}
+
+.four{
+	background-color: #26262682;
+	transform:translateZ(100px);
+	box-shadow: 0px 0px 2px 5px white;
+}
+
+
+.five{
+	background-color: #26262682;
+	transform: rotateY(90deg) translateX(-50px) translateZ(50px);
+	box-shadow: 0px 0px 2px 5px white;
+}
+
+.six{
+	background-color: yellow;
+	transform: rotateY(90deg) translateX(-50px) translateZ(-50px);
+	box-shadow: 0px 0px 2px 5px white;
+}
+
+#innerve{
+	position: absolute;
+	color: #eed9b7;
+	font-size: 3rem;
+	text-align: center;
+	z-index: 2;
+	width: 95vw;
+	text-shadow: 2px 3px #eed9b7;
+}
+
+#about-us{
+	margin-left: 30px;
+}
+
+.heading{
+	border-bottom: 2px solid #768b89d1;
+	font-size: 3rem;
+	color: #c4fff9d1;
+}
+
+#about-us p{
+	color: #eed9b7;
+	height: 100px;
+}
+
+#contact{
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+
+#my-details-container {
+    width: 93%;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: row;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+#info{
+	width: 40%;
+	margin-right: 20vw;
+}
+
+#contact .horizontal-list li:hover{
+	box-shadow: 0px 0px 12px 3px whitesmoke;
+}
